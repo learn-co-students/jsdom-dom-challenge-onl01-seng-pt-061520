@@ -34,14 +34,14 @@ submit.addEventListener("click",function(e){
 
 // Make the functions for them
 function plusCounter(){
-    let counterInc = parseInt(counter.textContent)
+    let counterInt = parseInt(counter.textContent)
     counterInt++
     counter.textContent = counterInt
     //The textContent property sets or returns the text content of the specified node, and all its descendants.
 }
 
 function minusCounter(){
-    let counterInc = parseInt(counter.textContent)
+    let counterInt = parseInt(counter.textContent)
     counterInt--
     counter.textContent = counterInt
 }
