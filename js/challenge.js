@@ -85,7 +85,7 @@ function pauseEverything(){
 function counterInc(){
     let counterInt = parseInt(counter.textContent)
     if(flag == false){
-    counter++
+    counterInt++
     counter.textContent = counterInt}
 }
 
