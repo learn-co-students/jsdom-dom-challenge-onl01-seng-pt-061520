@@ -46,6 +46,7 @@ function minusCounter(){
     counter.textContent = counterInt
 }
 
+//Counts likes
 function likesCounter(){
     const likesContainer = document.querySelector(".likes")
     const li = document.createElement("li")
@@ -62,7 +63,7 @@ function likesCounter(){
     }
 }
 
-
+// Make a Pause Button
 function pauseEverything(){
     if (plus.disabled == pauseBtn){
         plus.disabled = !pauseBtn
@@ -80,6 +81,7 @@ function pauseEverything(){
     }
 }
 
+// Counts
 function counterInc(){
     let counterInt = parseInt(counter.textContent)
     if(flag == false){
@@ -87,6 +89,7 @@ function counterInc(){
     counter.textContent = counterInt}
 }
 
+//Add comment
 function addComment(){
     const p = document.createElement("p")
     p.textContent = commentForm.comment.value
