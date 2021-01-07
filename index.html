@@ -11,7 +11,7 @@
     }
   </style>
 </head>
-<body>
+<body onload="startGame()">
   <h1>
     Welcome to the DOM Challenge
   </h1>
@@ -21,7 +21,7 @@
   <button id='minus' > ➖ </button>
   <button id='plus' > ➕ </button>
   <button id='heart' > ❤️ </button>
-  <button id='pause' > pause </button>
+  <button onclick="stopTimer()" id='pause' > pause </button>
 
   <ul class='likes'></ul>
 
