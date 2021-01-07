@@ -18,12 +18,13 @@
   <h1 id='counter'>
     0
   </h1>
-  <button id='minus' > ➖ </button>
-  <button id='plus' > ➕ </button>
-  <button id='heart' > ❤️ </button>
+  <button onclick="subtractTimer()" id='minus' > ➖ </button>
+  <button onclick="addTimer()" id='plus' > ➕ </button>
+  <button onclick="likeNumber()" id='heart' > ❤️ </button>
   <button onclick="stopTimer()" id='pause' > pause </button>
 
-  <ul class='likes'></ul>
+  <ul id="likes">
+  </ul>
 
   <div>
     <h3>Comments</h3>
