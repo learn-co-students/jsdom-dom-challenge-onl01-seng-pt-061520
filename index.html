@@ -11,23 +11,26 @@
     }
   </style>
 </head>
-<body>
+<body onload="startGame()">
   <h1>
     Welcome to the DOM Challenge
   </h1>
   <h1 id='counter'>
     0
   </h1>
-  <button id='minus' > ➖ </button>
-  <button id='plus' > ➕ </button>
-  <button id='heart' > ❤️ </button>
-  <button id='pause' > pause </button>
+  <button onclick="subtractTimer()" id='minus' > ➖ </button>
+  <button onclick="addTimer()" id='plus' > ➕ </button>
+  <button onclick="likeNumber()" id='heart' > ❤️ </button>
+  <button onclick="stopTimer()" id='pause' > pause </button>
 
-  <ul class='likes'></ul>
+  <h3>Likes</h3>
+  <ul id="likes">
+  </ul>
 
   <div>
     <h3>Comments</h3>
-    <div id='list' class='comments'></div>
+    <ul id='allComments'>
+    </ul>
 
     <h3>Leave a comment</h3>
 
